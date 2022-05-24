@@ -3,17 +3,12 @@ import React from "react";
 export default function User({ user }) {
   return (
     <div className="user">
-      <div
-        className="img"
-        style={{ backgroundImage: `url(${user.imagelink})` }}
-      ></div>
+      <img className="img" src={user.imagelink} alt={user.firstname} />
       <div className="details">
-        <div className="title">
-          <h5>
-            {user.firstname} {user.lastname}
-          </h5>
-          <p>{user.email}</p>
-        </div>
+        <h5>
+          {user.firstname} {user.lastname}
+        </h5>
+        <p>{user.email}</p>
         <hr style={{ width: "50%" }} />
         <div className="others">
           <p>{user.website}</p>
