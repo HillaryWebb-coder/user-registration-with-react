@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.313em;
+  background-color: #0e172c;
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 120px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f8fc;
+  padding: 20px;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 1.63em;
+  line-height: 1.63em;
+  color: #8546f0;
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.27em;
+  text-transform: uppercase;
+  /* font-weight: 300; */
+}
+
+.registration {
+  padding: 30px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.sub-section {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  max-width: 100px;
+  max-height: 30px;
+}
+
+.btns {
+  justify-content: space-around !important;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+input {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  background-color: #8546f0;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  transition: all 700ms ease-out;
+}
+
+input[type="reset"] {
+  color: #8546f0;
+  border: 1px solid #8546f0;
+  background-color: #0e172c;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 10px;
+  transition: all 700ms;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #8546f0;
+  color: #8546f0;
+  background-color: #0e172c;
+}
+
+input[type="reset"]:hover {
+  box-shadow: inset 600px 0 0 0 red;
+  color: #ffffff;
+}
+
+.user {
+  margin: 20px;
+  display: flex;
+  width: 100%;
+  /* width: 30%; */
+  border: 1px solid rgba(254, 199, 215, 0.1);
+  box-shadow: 0px 60px 85px -61px #fec7d7;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+
+.user:hover {
+  box-shadow: none;
+}
+
+.user .img {
+  /* background-image: url("https://picsum.photos/id/237/200/300"); */
+  width: 20%;
+  height: 120px;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.details {
+  text-align: center;
+  font-size: 16px;
+}
+
+.details h5 {
+  font-size: 1em;
+  line-height: 1.313em;
+  margin: 2.63em 0 0 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #8546f0;
+}
+
+.details p {
+  margin: 10px;
+  margin-bottom: 1.313em;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: space-around; */
+  /* opacity: 0.2; */
+}
+
+hr {
+  border: 1px solid rgba(249, 248, 252, 0.2);
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  background-color: #f9f8fc;
+  color: black;
+  margin: 0px;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .sub-section {
+    width: 100%;
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  .registration {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+
+  /* .form-group input[type="text"] {
+    display: block;
+    width: 100%;
+  } */
+
+  .user {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 6px 100px -61px #fec7d7;
+  }
+
+  .title {
+    display: block;
+  }
+}
