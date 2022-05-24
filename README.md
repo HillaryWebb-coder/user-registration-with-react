@@ -1,2 +1,2 @@
 # user-registration-with-react
-Created with CodeSandbox
+Task 3 of the letsgrowmore internship programme
